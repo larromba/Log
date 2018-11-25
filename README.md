@@ -2,7 +2,7 @@
 
 | master  | dev |
 | ------------- | ------------- |
-| [![Build Status](https://travis-ci.com/larromba/log.svg?branch=master)](https://travis-ci.com/larromba/log) | [![Build Status](https://travis-ci.com/larromba/log.svg?branch=dev)](https://travis-ci.com/larromba/log) |
+| [![Build Status](https://travis-ci.com/larromba/Log.svg?branch=master)](https://travis-ci.com/larromba/log) | [![Build Status](https://travis-ci.com/larromba/Log.svg?branch=dev)](https://travis-ci.com/larromba/log) |
 
 ## About
 Just a bog standard log in Swift
