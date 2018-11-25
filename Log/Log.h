@@ -1,11 +1,3 @@
-//
-//  Log.h
-//  Log
-//
-//  Created by Lee Arromba on 25/11/2018.
-//  Copyright © 2018 Lee Arromba. All rights reserved.
-//
-
 #import <Cocoa/Cocoa.h>
 
 //! Project version number for Log.
