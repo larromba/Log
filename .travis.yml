@@ -1,5 +1,5 @@
 language: swift
 script: xcodebuild -project Log.xcodeproj -scheme LogTests-Mac -destination platform\=OS\ X,arch\=x86_64 build test CODE_SIGN_IDENTITY="" CODE_SIGNING_REQUIRED=NO CODE_SIGN_ENTITLEMENTS="" CODE_SIGNING_ALLOWED=NO TRAVIS=1 | xcpretty && exit ${PIPESTATUS[0]}
-script: xcodebuild -project Log.xcodeproj -scheme LogTests-iOS -destination platform\=iOS\ Simulator,arch\=x86_64 build test CODE_SIGN_IDENTITY="" CODE_SIGNING_REQUIRED=NO CODE_SIGN_ENTITLEMENTS="" CODE_SIGNING_ALLOWED=NO TRAVIS=1 | xcpretty && exit ${PIPESTATUS[0]}
+script: xcodebuild -project Log.xcodeproj -scheme LogTests-iOS -destination platform\=iOS\ Simulator,arch\=x86_64,name:iPhone\ 6 build test CODE_SIGN_IDENTITY="" CODE_SIGNING_REQUIRED=NO CODE_SIGN_ENTITLEMENTS="" CODE_SIGNING_ALLOWED=NO TRAVIS=1 | xcpretty && exit ${PIPESTATUS[0]}
 #xcode_destination: platform=OS X,arch=x86_64
 osx_image: xcode10
