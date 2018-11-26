@@ -1,4 +1,4 @@
-#import <Cocoa/Cocoa.h>
+#import <Foundation/Foundation.h>
 
 //! Project version number for Log.
 FOUNDATION_EXPORT double LogVersionNumber;

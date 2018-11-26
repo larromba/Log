@@ -1,5 +1,5 @@
-import XCTest
 @testable import Log
+import XCTest
 
 final class LogTests: XCTestCase {
     func testLogsWork() {
