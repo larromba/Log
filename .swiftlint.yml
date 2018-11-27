@@ -1,6 +1,6 @@
 included:
-  - Log
-  - LogTests
+  - Logging
+  - LoggingTests
 excluded:
   - Pods
   - Carthage
