@@ -1,4 +1,4 @@
-@testable import Log
+@testable import Logging
 import XCTest
 
 final class LogTests: XCTestCase {
