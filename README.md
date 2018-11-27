@@ -5,7 +5,7 @@
 | [![Build Status](https://travis-ci.com/larromba/Logging.svg?branch=master)](https://travis-ci.com/larromba/log) | [![Build Status](https://travis-ci.com/larromba/Logging.svg?branch=dev)](https://travis-ci.com/larromba/log) |
 
 ## About
-Just a bog standard log in Swift
+Simple logging for Swift projects
 
 ## Installation
 
@@ -13,12 +13,51 @@ Just a bog standard log in Swift
 
 ```
 // Cartfile
-github "larromba/log" ~> 1.0
+github "larromba/logging" ~> 1.0
 ```
 
 ```
 // Terminal
 carthage update
+```
+
+## Usage
+
+**Global logging**
+```swift
+log(...)
+logWarning(...)
+logError(...)
+logMagic(...)
+logHack(...)
+```
+
+**Targetted logging**
+```swift
+
+enum MyLog: Log {
+    static var isEnabled: Bool = true
+}
+enum MyLog2: Log {
+    static var isEnabled: Bool = true
+}
+enum MyLog3: Log {
+    static var isEnabled: Bool = true
+}
+
+let aLogGroup: [Log.Type] = [MyLog2.self, MyLog3.self]
+
+func foo() {
+    MyLog.info(...)
+    MyLog.warning(...)
+    MyLog.error(...)
+    MyLog.magic(...)
+    MyLog.hack(...)
+    MyLog.isEnabled = false
+
+    // an example of how to disable log groups
+    aLogGroup.forEach { $0.isEnabled = false }
+}
 ```
 
 ## Licence
