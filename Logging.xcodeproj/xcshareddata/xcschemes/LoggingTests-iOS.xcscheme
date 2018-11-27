@@ -16,10 +16,10 @@
             skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "7F02A49D21AB0B2C007A6ECD"
-               BuildableName = "LogTests.xctest"
-               BlueprintName = "LogTests"
-               ReferencedContainer = "container:Log.xcodeproj">
+               BlueprintIdentifier = "7FEE9D7221AC9D570093507F"
+               BuildableName = "LoggingTests-iOS.xctest"
+               BlueprintName = "LoggingTests-iOS"
+               ReferencedContainer = "container:Logging.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
