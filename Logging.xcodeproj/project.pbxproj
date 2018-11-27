@@ -15,6 +15,10 @@
 		7FEE9D7F21AC9EF30093507F /* LogTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F02A4A321AB0B2C007A6ECD /* LogTests.swift */; };
 		7FEE9D8121ADB1A50093507F /* Log.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FEE9D8021ADB1A50093507F /* Log.swift */; };
 		7FEE9D8521ADCDAF0093507F /* Utility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FEE9D8421ADCDAF0093507F /* Utility.swift */; };
+		7FEE9DAB21ADE2050093507F /* LogTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F02A4A321AB0B2C007A6ECD /* LogTests.swift */; };
+		7FEE9DAF21ADE2A20093507F /* GlobalLogTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FEE9DAE21ADE2A20093507F /* GlobalLogTests.swift */; };
+		7FEE9DB021ADE2C60093507F /* GlobalLogTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FEE9DAE21ADE2A20093507F /* GlobalLogTests.swift */; };
+		7FEE9DB121ADE2C70093507F /* GlobalLogTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FEE9DAE21ADE2A20093507F /* GlobalLogTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -32,6 +36,13 @@
 			remoteGlobalIDString = 7F02A49421AB0B2C007A6ECD;
 			remoteInfo = Log;
 		};
+		7FEE9DAC21ADE26E0093507F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7F02A48C21AB0B2C007A6ECD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7F02A49421AB0B2C007A6ECD;
+			remoteInfo = Logging;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
@@ -47,6 +58,9 @@
 		7FEE9D7721AC9D570093507F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7FEE9D8021ADB1A50093507F /* Log.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Log.swift; sourceTree = "<group>"; };
 		7FEE9D8421ADCDAF0093507F /* Utility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utility.swift; sourceTree = "<group>"; };
+		7FEE9DA321ADD8C00093507F /* LoggingTests-tvOS.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "LoggingTests-tvOS.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		7FEE9DA721ADD8C10093507F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7FEE9DAE21ADE2A20093507F /* GlobalLogTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlobalLogTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,6 +87,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		7FEE9DA021ADD8C00093507F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -81,8 +102,10 @@
 			children = (
 				7F02A4B221AB0C7E007A6ECD /* README.md */,
 				7F02A49721AB0B2C007A6ECD /* Logging */,
+				7FEE9DB221ADE2D40093507F /* LoggingTests */,
 				7F02A4A221AB0B2C007A6ECD /* LoggingTests-macOS */,
 				7FEE9D7421AC9D570093507F /* LoggingTests-iOS */,
+				7FEE9DA421ADD8C00093507F /* LoggingTests-tvOS */,
 				7F02A49621AB0B2C007A6ECD /* Products */,
 				7FEE9D7D21AC9D690093507F /* Frameworks */,
 			);
@@ -94,6 +117,7 @@
 				7F02A49521AB0B2C007A6ECD /* Logging.framework */,
 				7F02A49E21AB0B2C007A6ECD /* LoggingTests-macOS.xctest */,
 				7FEE9D7321AC9D570093507F /* LoggingTests-iOS.xctest */,
+				7FEE9DA321ADD8C00093507F /* LoggingTests-tvOS.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -113,7 +137,6 @@
 		7F02A4A221AB0B2C007A6ECD /* LoggingTests-macOS */ = {
 			isa = PBXGroup;
 			children = (
-				7F02A4A321AB0B2C007A6ECD /* LogTests.swift */,
 				7F02A4A521AB0B2C007A6ECD /* Info.plist */,
 			);
 			path = "LoggingTests-macOS";
@@ -132,6 +155,23 @@
 			children = (
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		7FEE9DA421ADD8C00093507F /* LoggingTests-tvOS */ = {
+			isa = PBXGroup;
+			children = (
+				7FEE9DA721ADD8C10093507F /* Info.plist */,
+			);
+			path = "LoggingTests-tvOS";
+			sourceTree = "<group>";
+		};
+		7FEE9DB221ADE2D40093507F /* LoggingTests */ = {
+			isa = PBXGroup;
+			children = (
+				7FEE9DAE21ADE2A20093507F /* GlobalLogTests.swift */,
+				7F02A4A321AB0B2C007A6ECD /* LogTests.swift */,
+			);
+			path = LoggingTests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -203,6 +243,24 @@
 			productReference = 7FEE9D7321AC9D570093507F /* LoggingTests-iOS.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
+		7FEE9DA221ADD8C00093507F /* LoggingTests-tvOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7FEE9DA821ADD8C10093507F /* Build configuration list for PBXNativeTarget "LoggingTests-tvOS" */;
+			buildPhases = (
+				7FEE9D9F21ADD8C00093507F /* Sources */,
+				7FEE9DA021ADD8C00093507F /* Frameworks */,
+				7FEE9DA121ADD8C00093507F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7FEE9DAD21ADE26E0093507F /* PBXTargetDependency */,
+			);
+			name = "LoggingTests-tvOS";
+			productName = "LoggingTests-tvOS";
+			productReference = 7FEE9DA321ADD8C00093507F /* LoggingTests-tvOS.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -223,6 +281,9 @@
 					7FEE9D7221AC9D570093507F = {
 						CreatedOnToolsVersion = 10.1;
 					};
+					7FEE9DA221ADD8C00093507F = {
+						CreatedOnToolsVersion = 10.1;
+					};
 				};
 			};
 			buildConfigurationList = 7F02A48F21AB0B2C007A6ECD /* Build configuration list for PBXProject "Logging" */;
@@ -240,6 +301,7 @@
 				7F02A49421AB0B2C007A6ECD /* Logging */,
 				7F02A49D21AB0B2C007A6ECD /* LoggingTests-macOS */,
 				7FEE9D7221AC9D570093507F /* LoggingTests-iOS */,
+				7FEE9DA221ADD8C00093507F /* LoggingTests-tvOS */,
 			);
 		};
 /* End PBXProject section */
@@ -260,6 +322,13 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		7FEE9D7121AC9D570093507F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7FEE9DA121ADD8C00093507F /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -304,6 +373,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7F02A4A421AB0B2C007A6ECD /* LogTests.swift in Sources */,
+				7FEE9DAF21ADE2A20093507F /* GlobalLogTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -312,6 +382,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				7FEE9D7F21AC9EF30093507F /* LogTests.swift in Sources */,
+				7FEE9DB021ADE2C60093507F /* GlobalLogTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7FEE9D9F21ADD8C00093507F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7FEE9DAB21ADE2050093507F /* LogTests.swift in Sources */,
+				7FEE9DB121ADE2C70093507F /* GlobalLogTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -327,6 +407,11 @@
 			isa = PBXTargetDependency;
 			target = 7F02A49421AB0B2C007A6ECD /* Logging */;
 			targetProxy = 7FEE9D7B21AC9D630093507F /* PBXContainerItemProxy */;
+		};
+		7FEE9DAD21ADE26E0093507F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7F02A49421AB0B2C007A6ECD /* Logging */;
+			targetProxy = 7FEE9DAC21ADE26E0093507F /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -477,7 +562,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SDKROOT = "";
 				SKIP_INSTALL = YES;
-				SUPPORTED_PLATFORMS = "macosx iphonesimulator iphoneos";
+				SUPPORTED_PLATFORMS = "macosx iphonesimulator iphoneos appletvos appletvsimulator watchos watchsimulator";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.2;
 			};
@@ -508,7 +593,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SDKROOT = "";
 				SKIP_INSTALL = YES;
-				SUPPORTED_PLATFORMS = "macosx iphonesimulator iphoneos";
+				SUPPORTED_PLATFORMS = "macosx iphonesimulator iphoneos appletvos appletvsimulator watchos watchsimulator";
 				SWIFT_VERSION = 4.2;
 			};
 			name = Release;
@@ -573,6 +658,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.larromba.LoggingTests-iOS";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = iphoneos;
+				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -594,8 +680,50 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.larromba.LoggingTests-iOS";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = iphoneos;
+				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		7FEE9DA921ADD8C10093507F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = PFC77GK3D7;
+				INFOPLIST_FILE = "LoggingTests-tvOS/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.larromba.LoggingTests-tvOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = appletvos;
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 12.1;
+			};
+			name = Debug;
+		};
+		7FEE9DAA21ADD8C10093507F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = PFC77GK3D7;
+				INFOPLIST_FILE = "LoggingTests-tvOS/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.larromba.LoggingTests-tvOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = appletvos;
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 12.1;
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
@@ -635,6 +763,15 @@
 			buildConfigurations = (
 				7FEE9D7921AC9D570093507F /* Debug */,
 				7FEE9D7A21AC9D570093507F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7FEE9DA821ADD8C10093507F /* Build configuration list for PBXNativeTarget "LoggingTests-tvOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7FEE9DA921ADD8C10093507F /* Debug */,
+				7FEE9DAA21ADD8C10093507F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
