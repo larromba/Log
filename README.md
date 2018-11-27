@@ -2,7 +2,7 @@
 
 | master  | dev |
 | ------------- | ------------- |
-| [![Build Status](https://travis-ci.com/larromba/Logging.svg?branch=master)](https://travis-ci.com/larromba/log) | [![Build Status](https://travis-ci.com/larromba/Logging.svg?branch=dev)](https://travis-ci.com/larromba/log) |
+| [![Build Status](https://travis-ci.com/larromba/Logging.svg?branch=master)](https://travis-ci.com/larromba/logging) | [![Build Status](https://travis-ci.com/larromba/Logging.svg?branch=dev)](https://travis-ci.com/larromba/logging) |
 
 ## About
 Simple logging for Swift projects
