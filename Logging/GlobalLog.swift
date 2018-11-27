@@ -1,5 +1,4 @@
 import Foundation
-import IOKit
 
 public func log(_ items: Any..., separator: String = " ", terminator: String = "\n") {
     #if DEBUG
