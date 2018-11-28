@@ -11,6 +11,7 @@
 		7F02A4A421AB0B2C007A6ECD /* LogTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F02A4A321AB0B2C007A6ECD /* LogTests.swift */; };
 		7F02A4A621AB0B2C007A6ECD /* Log.h in Headers */ = {isa = PBXBuildFile; fileRef = 7F02A49821AB0B2C007A6ECD /* Log.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		7F02A4B021AB0B34007A6ECD /* GlobalLog.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F02A4AF21AB0B34007A6ECD /* GlobalLog.swift */; };
+		7F7FCF9621AEAA0200C4B1FF /* Logging.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7F02A49521AB0B2C007A6ECD /* Logging.framework */; };
 		7FEE9D7E21AC9D690093507F /* Logging.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7F02A49521AB0B2C007A6ECD /* Logging.framework */; };
 		7FEE9D7F21AC9EF30093507F /* LogTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F02A4A321AB0B2C007A6ECD /* LogTests.swift */; };
 		7FEE9D8121ADB1A50093507F /* Log.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FEE9D8021ADB1A50093507F /* Log.swift */; };
@@ -91,6 +92,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7F7FCF9621AEAA0200C4B1FF /* Logging.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
