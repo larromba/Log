@@ -567,6 +567,8 @@
 				SUPPORTED_PLATFORMS = "macosx iphonesimulator iphoneos appletvos appletvsimulator watchos watchsimulator";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.2;
+				TVOS_DEPLOYMENT_TARGET = 11.0;
+				WATCHOS_DEPLOYMENT_TARGET = 4.0;
 			};
 			name = Debug;
 		};
@@ -597,6 +599,8 @@
 				SKIP_INSTALL = YES;
 				SUPPORTED_PLATFORMS = "macosx iphonesimulator iphoneos appletvos appletvsimulator watchos watchsimulator";
 				SWIFT_VERSION = 4.2;
+				TVOS_DEPLOYMENT_TARGET = 11.0;
+				WATCHOS_DEPLOYMENT_TARGET = 4.0;
 			};
 			name = Release;
 		};
