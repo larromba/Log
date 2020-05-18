@@ -12,7 +12,7 @@ final class GlobalLogTests: XCTestCase {
         super.tearDown()
     }
 
-    func testGlobalLogOutput() {
+    func test_log_whenCalled_expectFormattedOutput() {
         // mocks
         var output = [String]()
         _playgroundPrintHook = { message in

@@ -1,6 +1,7 @@
 @testable import Logging
 import XCTest
 
+//swiftlint:disable lower_acl_than_parent
 final class LogTests: XCTestCase {
     override func setUp() {
          super.setUp()
@@ -12,7 +13,7 @@ final class LogTests: XCTestCase {
         super.tearDown()
     }
 
-    func testCustomLogDisabled() {
+    func test_log_whenDisabled_expectNoOutput() {
         // mocks
         var output = [String]()
         _playgroundPrintHook = { message in
@@ -33,7 +34,7 @@ final class LogTests: XCTestCase {
         XCTAssertTrue(output.isEmpty)
     }
 
-    func testCustomLogEnabled() {
+    func test_log_whenEnabled_expectFormattedOutput() {
         // mocks
         var output = [String]()
         _playgroundPrintHook = { message in
